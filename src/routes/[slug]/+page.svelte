@@ -27,7 +27,7 @@
 	</div>
 
 	<!-- Post -->
-	<div class="prose">
+	<div class="post">
 		<svelte:component this={data.content} />
 	</div>
 	<PostFooter />
