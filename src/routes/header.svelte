@@ -35,11 +35,6 @@
 		margin-block: var(--size-7);
 	}
 
-	a {
-		color: inherit;
-		text-decoration: none;
-	}
-
 	@media (min-width: 768px) {
 		nav {
 			display: flex;
