@@ -19,8 +19,8 @@ html {
   --orange-2: hsl(18, 100%, 50%);
 
   /* gradients */
-  --gradient-dark: linear-gradient(0.75turn, var(--black-1), var(--black-2));
-  --gradient-light: linear-gradient(0.75turn, var(--white-1), var(--white-2));
+  --gradient-dark: linear-gradient(135deg, var(--black-2), var(--black-1));
+  --gradient-light: linear-gradient(235deg, var(--white-2), var(--white-1));
 
   /* dark */
   --brand-dark: var(--orange-1);
