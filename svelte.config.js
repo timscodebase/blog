@@ -1,3 +1,10 @@
+// https://kit.svelte.dev/docs/adapters
+//
+// Adapters: Netlify, Vercel, Cloudflare, AWS, Azure, Google Cloud,
+// CloudCannon, GitHub Pages, GitLab Pages, Render, Deno and more.
+//
+// https://sveltesociety.dev/components#adapters
+
 import adapter from '@sveltejs/adapter-auto'
 import { vitePreprocess } from '@sveltejs/kit/vite'
 
