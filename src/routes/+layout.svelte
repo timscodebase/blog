@@ -1,12 +1,12 @@
 <script lang="ts">
-	import Footer from '$lib/footer';
-	import Header from '$lib/header';
+	import Footer from '$lib/components/footer.svelte'
+	import Header from '$lib/components/header.svelte'
 
-	import 'open-props/style';
-	import 'open-props/normalize';
-	import 'open-props/buttons';
+	import 'open-props/style'
+	import 'open-props/normalize'
+	import 'open-props/buttons'
 
-	import '../app.css';
+	import '../global.css'
 </script>
 
 <div class="layout">
