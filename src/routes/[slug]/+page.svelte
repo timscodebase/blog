@@ -1,4 +1,5 @@
 <script lang="ts">
+	import PostFooter from './post-footer.svelte'
 	import { formatDate } from '$lib/utils'
 
 	export let data
@@ -29,6 +30,7 @@
 	<div class="prose">
 		<svelte:component this={data.content} />
 	</div>
+	<PostFooter />
 </article>
 
 <style>
