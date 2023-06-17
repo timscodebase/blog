@@ -37,6 +37,7 @@
 		"@fontsource/jetbrains-mono": "^5.0.3",
 		"@fontsource/manrope": "^5.0.3",
 		"lucide-svelte": "^0.244.0",
-		"open-props": "^1.5.9"
+		"open-props": "^1.5.9",
+		"shiki": "^0.14.2"
 	}
 }
