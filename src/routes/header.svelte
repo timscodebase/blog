@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { title } from './../lib/config.ts'
 	import Toggle from './toggle.svelte'
 	import * as config from '$lib/config'
 </script>
@@ -31,6 +32,10 @@
 		padding-block: var(--size-7);
 	}
 
+	a.title {
+		font-size: var(--size-10);
+	}
+
 	.links {
 		margin-block: var(--size-7);
 	}
@@ -38,6 +43,7 @@
 	@media (min-width: 768px) {
 		nav {
 			display: flex;
+			align-items: center;
 			justify-content: space-between;
 		}
 

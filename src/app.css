@@ -23,22 +23,40 @@ html {
   --gradient-light: linear-gradient(235deg, var(--white-2), var(--white-1));
 
   /* dark */
-  --brand-dark: var(--orange-1);
+  --brand-dark: var(--black-1);
   --text-1-dark: var(--white-1);
   --text-2-dark: var(--white-2);
   --surface-1-dark: var(--black-1);
   --surface-2-dark: var(--black-2);
   --background-dark: var(--gradient-dark);
-  --border-dark: var(--orange-1);
+  --border-dark: var(--white-1);
 
   /* light */
-  --brand-light: var(--orange-2);
+  --brand-light: var(--white-1);
   --text-1-light: var(--black-1);
   --text-2-light: var(--black-2);
   --surface-1-light: var(--white-1);
   --surface-2-light: var(--white-2);
   --background-light: var(--gradient-light);
-  --border-light: var(--orange-2);
+  --border-light: var(--black-1);
+
+  /* orange dark */
+  --brand-orange-dark: var(--orange-1);
+  --text-1-orange-dark: var(--white-1);
+  --text-2-orange-dark: var(--white-2);
+  --surface-1-orange-dark: var(--black-1);
+  --surface-2-orange-dark: var(--black-2);
+  --background-orange-dark: var(--gradient-dark);
+  --border-orange-dark: var(--orange-1);
+
+  /* orange light */
+  --brand-orange-light: var(--orange-2);
+  --text-1-orange-light: var(--black-1);
+  --text-2-orange-light: var(--black-2);
+  --surface-1-orange-light: var(--white-1);
+  --surface-2-orange-light: var(--white-2);
+  --background-orange-light: var(--gradient-orange-light);
+  --border-orange-light: var(--orange-2);
 }
 
 :root {
@@ -58,7 +76,7 @@ html {
 @media (prefers-color-scheme: light) {
   :root {
     color-scheme: light;
-    
+
     --brand: var(--brand-light);
     --brand-accent: var(--brand-dark);
     --text-1: var(--text-1-light);
@@ -87,7 +105,7 @@ html {
 
 [color-scheme='light'] {
   color-scheme: light;
-  
+
   --brand: var(--brand-light);
   --brand-accent: var(--brand-dark);
   --text-1: var(--text-1-light);
@@ -97,6 +115,34 @@ html {
   --background: var(--background-light);
   --border: var(--border-light);
   --gradient: var(--gradient-light);
+}
+
+[color-scheme='orange-dark'] {
+  color-scheme: dark;
+
+  --brand: var(--brand-orange-dark);
+  --brand-accent: var(--brand-orange-light);
+  --text-1: var(--text-1-orange-dark);
+  --text-2: var(--text-2-orange-dark);
+  --surface-1: var(--surface-1-orange-dark);
+  --surface-2: var(--surface-2-orange-dark);
+  --background: var(--background-orange-dark);
+  --border: var(--border-orange-dark);
+  --gradient: var(--gradient-orange-dark);
+}
+
+[color-scheme='orange-light'] {
+  color-scheme: light;
+
+  --brand: var(--brand-orange-light);
+  --brand-accent: var(--brand-orange-dark);
+  --text-1: var(--text-1-orange-light);
+  --text-2: var(--text-2-light);
+  --surface-1: var(--surface-1-orange-light);
+  --surface-2: var(--surface-2-orange-light);
+  --background: var(--background-orange-light);
+  --border: var(--border-orange-light);
+  --gradient: var(--gradient-orange-light);
 }
 
 body {
@@ -109,12 +155,14 @@ body {
 }
 
 a {
-  color: var(--brand);
+  color: var(--text-1);
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 a:visited {
   color: var(--brand-accent);
 }

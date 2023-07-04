@@ -1,9 +1,8 @@
-export const prerender = true
-
 import type { Post } from '$lib/types'
 
-export async function load({ fetch }) {
+export const prerender = true
+
+export async function load({ fetch }: { fetch: typeof fetch }): Promise<{ posts: Post[] }> {
 	const response = await fetch('api/posts')
-	const posts: Post[] = await response.json()
-	return { posts }
+	return { posts: await response.json() }
 }
