@@ -117,7 +117,7 @@ html {
   --gradient: var(--gradient-light);
 }
 
-[color-scheme='orange-dark'] {
+[color-scheme='orange dark'] {
   color-scheme: dark;
 
   --brand: var(--brand-orange-dark);
@@ -131,7 +131,7 @@ html {
   --gradient: var(--gradient-orange-dark);
 }
 
-[color-scheme='orange-light'] {
+[color-scheme='orange light'] {
   color-scheme: light;
 
   --brand: var(--brand-orange-light);

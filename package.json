@@ -38,6 +38,7 @@
 		"@fontsource/jetbrains-mono": "^5.0.4",
 		"@fontsource/manrope": "^5.0.4",
 		"@fontsource/questrial": "^5.0.4",
+		"@sveltejs/adapter-static": "^2.0.2",
 		"lucide-svelte": "^0.244.0",
 		"open-props": "^1.5.10",
 		"rehype-slug": "^5.1.0",

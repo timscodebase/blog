@@ -1,9 +1,12 @@
 import { writable } from 'svelte/store'
 import { browser } from '$app/environment'
 
-type Theme = 'light' | 'dark' | 'orange light' | 'orange dark'
+type Theme = {
+	theme: string,
+	icon: string,
+}
 
-const themes: Theme[] = ['light', 'dark', 'orange-light', 'orange-dark']
+const themes: Theme[] = []
 
 // We set the theme in `app.html` to prevent flashing
 const userTheme = browser && (localStorage?.getItem('color-scheme') as Theme | undefined)
@@ -30,3 +33,5 @@ export function toggleTheme(): void {
 export function setTheme(newTheme: Theme): void {
 	theme.set(newTheme)
 }
+
+

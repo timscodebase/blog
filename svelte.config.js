@@ -5,7 +5,7 @@
 //
 // https://sveltesociety.dev/components#adapters
 
-import adapter from '@sveltejs/adapter-vercel'
+import adapter from '@sveltejs/adapter-static'
 import { vitePreprocess } from '@sveltejs/kit/vite'
 
 import { mdsvex, escapeSvelte } from 'mdsvex'

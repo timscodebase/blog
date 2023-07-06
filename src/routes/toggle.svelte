@@ -3,12 +3,17 @@
 	import { Moon, Sun } from 'lucide-svelte'
 	import { theme, toggleTheme } from '$lib/theme'
 
-	console.log('Theme', $theme);
+	let is_dark = false
+	// when the theme changes, update the is_dark variable
+	$: {
+		is_dark = JSON.stringify($theme).includes('dark')
+		console.log('Is dark: ', is_dark)
+	}
 </script>
 
 <button on:click={toggleTheme} aria-label="Toggle theme">
 	<div in:fly={{ y: 10 }}>
-		{#if $theme.includes('dark')}
+		{#if is_dark}
 			<Moon />
 		{:else}
 			<Sun />
