@@ -5,7 +5,7 @@ A simple, fully themeable, blog built with SvelteKit and Markdown.
 
 ## Configuration
 
-The blog can be configured by editing the `lib/config.ts` file in the root of the project.
+The blog can be configured by editing the `/src/lib/config.ts` file in the root of the project.
 
 You can configure:
 
