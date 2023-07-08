@@ -1,15 +1,15 @@
 import { writable } from 'svelte/store'
 import { browser } from '$app/environment'
 
-type Theme = {
-	theme: string,
-	icon: string,
-}
-
-const themes: Theme[] = []
+const themes = [
+	'Light',
+	'Dark',
+	'Orange Light',
+	'Orange Dark'
+]
 
 // We set the theme in `app.html` to prevent flashing
-const userTheme = browser && (localStorage?.getItem('color-scheme') as Theme | undefined)
+const userTheme = browser && (localStorage?.getItem('color-scheme'))
 
 // Create the store
 export const theme = writable(userTheme ?? 'dark')
@@ -30,7 +30,7 @@ export function toggleTheme(): void {
 }
 
 // Set the theme
-export function setTheme(newTheme: Theme): void {
+export function setTheme(newname: Theme): void {
 	theme.set(newTheme)
 }
 

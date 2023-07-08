@@ -89,7 +89,7 @@ html {
   }
 }
 
-[color-scheme='dark'] {
+[color-scheme='Dark'] {
   color-scheme: dark;
 
   --brand: var(--brand-dark);
@@ -103,7 +103,7 @@ html {
   --gradient: var(--gradient-dark);
 }
 
-[color-scheme='light'] {
+[color-scheme='Light'] {
   color-scheme: light;
 
   --brand: var(--brand-light);
@@ -117,7 +117,7 @@ html {
   --gradient: var(--gradient-light);
 }
 
-[color-scheme='orange dark'] {
+[color-scheme='Orange Dark'] {
   color-scheme: dark;
 
   --brand: var(--brand-orange-dark);
@@ -131,7 +131,7 @@ html {
   --gradient: var(--gradient-orange-dark);
 }
 
-[color-scheme='orange light'] {
+[color-scheme='Orange Light'] {
   color-scheme: light;
 
   --brand: var(--brand-orange-light);
